@@ -15,3 +15,4 @@ pnpm dev
 yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion 
 yarn add @chakra-ui/icons
 
+

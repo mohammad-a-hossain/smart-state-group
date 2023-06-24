@@ -14,10 +14,11 @@ import {
 } from '@chakra-ui/react'
 import { IconButton } from '@chakra-ui/react'
 
-import {HiHomeModern} from 'react-icons/hi2'
+import { HiHomeModern,HiBars4 } from "react-icons/hi2";
+
 import Link from 'next/link'
 import { navigationbarConstant } from './navigationbar'
-import {HamburgerIcon}  from '@chakra-ui/icons'
+//import {HamburgerIcon}  from '@chakra-ui/icons'
 
  const NavigationMobile = () => {
   return (
@@ -32,7 +33,7 @@ import {HamburgerIcon}  from '@chakra-ui/icons'
     <Flex alignItems='center' justifyContent='space-between'>
     <Link href='/'>
       <Box display='flex' gap='2' alingnItems='center'> 
-      <HiHomeModern size='30' />
+      <HiBars4 size='30' />
      <Text fontSize='2xl' fontWeight='black'>
      Smart State
      </Text>
@@ -43,7 +44,7 @@ import {HamburgerIcon}  from '@chakra-ui/icons'
      <MenuButton 
      as={IconButton}
      aria-label='Options'
-     icon={<HamburgerIcon />}
+     icon={<HiBars4/>}
      variant='outline'>
    
      </MenuButton>
