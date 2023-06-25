@@ -4,15 +4,15 @@ import { Box, Text } from '@chakra-ui/react'
 import React from 'react'
 import { PropertySlider } from './PropertySlider'
 
-
+//const {hits} from  '@/features/mockData'; 
 //console.log(data)
   const data =[
     {'name':'abu'},{'name':'kbu'},{'name':'lbu'},{'name':'sbu'},{'name':'fbu'},{'name':'jbu'},
-
 ]
-export const FeatureProperties = () => {
 
-console.log('indata',{data})
+export const FeatureProperties = ({data}) => {
+
+//console.log('indata',{data})
 
   return (
     <Box

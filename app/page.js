@@ -1,36 +1,36 @@
 'use client'
+import {useState} from 'react'
  import Bannar from '@/component/Bannar'
 import { DefaultLayout } from '../defaultLayout'
-//import { Extra } from '@/component/extra'
 import { FeatureProperties } from '@/component/Features/featureProperties'
 
+import {hits} from '@/features/mockData/properties'
 
-//import {hits} from '../features/mockData/properties.json'
 
-// async function getProperties(){
-//   const res =await fetch('../features/mockData/properties')
-//   console.log(res)
-//   const result= res.json()
-//   return result
 
-// }
 
 export default  function Home() {
-  //const { hits} =  getProperties()
+  
+  const [data, setData] = useState([...hits])
+ 
+console.log(data)
+  
 
- //console.log(hits)
+ 
   return (
   <DefaultLayout>
    <Bannar/>
-   <FeatureProperties/>
+   <FeatureProperties data={data}/>
   </DefaultLayout>
   )
 }
 
 
-
 // export async function getStaticProps(){
-// return{
-//   props:{properties:hits}
-// }
+//   const {hits} = require('@/features/mockData/properties')
+
+//   return {
+//     props: {
+//       properties: hits}
+//   }
 // }

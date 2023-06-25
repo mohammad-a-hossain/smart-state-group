@@ -58,14 +58,13 @@ import 'swiper/css/scrollbar';
 
 export const PropertySlider = ({data}) => {
 
-  console.log('in slide data',data)
   return (
     <Swiper
    
     spaceBetween={10}
     slidesPerView={3}
     loop={true}
-    loopFillGroupWithBlank={true}
+    loopfillgroupwithblank={true}
     centeredSlides={true}
     autoplay={{delay:2000,disableOnIntraction:true}}
     pagination={{dynamicBullets:true}}
