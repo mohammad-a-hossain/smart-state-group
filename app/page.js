@@ -5,6 +5,7 @@ import { DefaultLayout } from '../defaultLayout'
 import { FeatureProperties } from '@/component/Features/featureProperties'
 
 import {hits} from '@/features/mockData/properties'
+import { Team } from '@/component/Team'
 
 
 
@@ -13,14 +14,15 @@ export default  function Home() {
   
   const [data, setData] = useState([...hits])
  
-console.log(data)
+//console.log(data.slice(0,6))
   
 
  
   return (
   <DefaultLayout>
    <Bannar/>
-   <FeatureProperties data={data}/>
+   <FeatureProperties data={data.slice(0,6)}/>
+   <Team/>
   </DefaultLayout>
   )
 }
