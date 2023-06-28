@@ -3,9 +3,9 @@ import React,{useState} from 'react'
 import { Box,Text,Image ,SimpleGrid} from '@chakra-ui/react'
 import { partners} from '@/features/mockData/partner'
 
-export const Partner = () => {
+export const Partner=()=>{
    // const [partners] = useState([...partner])
-    console.log(partners)
+    //console.log(partners)
   return (
     
     <SimpleGrid 
@@ -24,8 +24,7 @@ export const Partner = () => {
    )) 
 }
     
-{/* <Text fontSize='1.5rem' fontWeight='bold' textAligns='center'>our partner</Text>
-     */}
+
     </SimpleGrid>
   )
 }

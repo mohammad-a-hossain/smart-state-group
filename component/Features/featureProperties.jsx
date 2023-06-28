@@ -6,9 +6,9 @@ import { PropertySlider } from './PropertySlider'
 
 //const {hits} from  '@/features/mockData'; 
 //console.log(data)
-  const data =[
-    {'name':'abu'},{'name':'kbu'},{'name':'lbu'},{'name':'sbu'},{'name':'fbu'},{'name':'jbu'},
-]
+//   const data =[
+//     {'name':'abu'},{'name':'kbu'},{'name':'lbu'},{'name':'sbu'},{'name':'fbu'},{'name':'jbu'},
+// ]
 
 export const FeatureProperties = ({data}) => {
 

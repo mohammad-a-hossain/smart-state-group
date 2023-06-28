@@ -4,7 +4,7 @@ import { Box, Flex, Text, Button, Fade } from "@chakra-ui/react";
 import { FormTop } from "./Form/FormTop";
 //import {bgImage} from '../component/images/hero.png'
 
-const Bannar = () => {
+export const Bannar = () => {
   return (
     <Fade in>
       <Box
@@ -63,4 +63,4 @@ const Bannar = () => {
     </Fade>
   );
 };
-export default Bannar;
+

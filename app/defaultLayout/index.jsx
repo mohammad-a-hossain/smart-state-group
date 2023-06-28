@@ -9,12 +9,10 @@ import React from 'react'
 export const DefaultLayout = ({children}) => {
   return (
     <>
-    <NavigationDesktop />
-
-   <NavigationMobile />
-  {children}
-
-  <Footer />
+     <NavigationDesktop />
+     <NavigationMobile />
+     {children}
+     <Footer />
     </>
   )
 }

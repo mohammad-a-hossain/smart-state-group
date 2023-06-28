@@ -1,4 +1,6 @@
 {
+	"property":[
+	{ 
 	"id": 3996354,
 	"objectID": 3996354,
 	"ownerID": 1897045,
@@ -526,4 +528,6 @@
 	"hasMatchingFloorPlans": true,
 	"hidePrice": false,
 	"locationPurposeTier": 1
+}
+]
 }

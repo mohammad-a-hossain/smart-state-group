@@ -33,7 +33,7 @@ import { navigationbarConstant } from './navigationbar'
     <Flex alignItems='center' justifyContent='space-between'>
     <Link href='/'>
       <Box display='flex' gap='2' alingnItems='center'> 
-      <HiBars4 size='30' />
+       <HiBars4 size='30' />
      <Text fontSize='2xl' fontWeight='black'>
      Smart State
      </Text>

@@ -1,3 +1,6 @@
+
+'use client'
+
 import { Box,Badge ,Text, HStack,Flex} from '@chakra-ui/react'
 import{ usePropertiesHook} from '../../hooks/usePropertiesHook'
 import { IoBodyOutline,IoHappySharp,IoPartlySunnyOutline} from "react-icons/io5";
@@ -19,7 +22,7 @@ const FeatureCard=(property)=>{
   // console.log('card',property)
     return(
         <Box marginBottom='4rem' backgroundColor='lightBlue'>
-        <Link href={`/properties/externalId`}>
+        <Link href={`/property/externalId`}>
       
         <Box
         backgroundImage={`url('${coverPhoto}')`}

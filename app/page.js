@@ -1,31 +1,28 @@
 'use client'
-import {useState} from 'react'
- import Bannar from '@/component/Bannar'
-import { DefaultLayout } from '../defaultLayout'
-import { FeatureProperties } from '@/component/Features/featureProperties'
-import {Partner} from '@/component/Partner'
-import {hits} from '@/features/mockData/properties'
-import { Team } from '@/component/Team'
-import { Testimonials } from '@/component/Testimoinals'
+
+import React,{useState} from 'react'
+import {DefaultLayout} from './defaultLayout'
+ import {Bannar} from '@/component/Bannar'
+import {FeatureProperties} from '@/component/Features/featureProperties'
+ import {Partner} from '@/component/Partner'
+ import {hits} from '@/features/mockData/properties'
+ import { Team } from '@/component/Team'
+import  {Testimonials } from '@/component/Testimoinals'
 
 
 
 
 export default  function Home() {
-  
-  const [data, setData] = useState([...hits])
+  const [data, setData] = useState(hits)
  
 //console.log(data.slice(0,6))
-  
-
- 
   return (
   <DefaultLayout>
-   <Bannar/>
-   <FeatureProperties data={data.slice(0,6)}/>
-   <Team/>
-   <Partner />
-   <Testimonials />
+  <Bannar/>
+  <FeatureProperties key={data.id} data={data.slice(0,6)}/>
+  <Team/> 
+  <Partner/>
+  <Testimonials /> 
   </DefaultLayout>
   )
 }
