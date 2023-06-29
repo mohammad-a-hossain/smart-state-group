@@ -2,7 +2,6 @@
 
 
 import {Box,SimpleGrid} from '@chakra-ui/react'
-//import  {DefaultLayout} from '@/features/mockData/propertyList'
 import {DefaultLayout} from '../defaultLayout'
 import FeatureCard from '@/component/Features/featureCard'
 import {propertyLIst} from '@/features/mockData/propertyList'
