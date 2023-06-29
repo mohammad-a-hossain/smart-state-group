@@ -30,7 +30,7 @@ export default function page() {
 
   return (
     <DefaultLayout>
-    <Box  backgroundColor='#f2f4f2' paddingY='3rem'>
+    <Box  backgroundColor='#f2f4f2' padding='1rem'>
     <Grid templateColumns='repeat(6,1fr)' gap='5'  maxWidth='1280px' margin='0 auto'>
 
       <GridItem colSpan='6'>
